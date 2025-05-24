@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f5f5f5;
+}
+
+.contenedor {
+  display: flex;
+  height: 100vh;
+}
+
+.barra-lateral {
+  width: 20%;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido-principal {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #e5e5e5;
+}
+
+.contacto-elemento {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.contacto-elemento:hover {
+  background: #f0f0f0;
+}
+
+.panel-conversacion {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cabecera-mensajes {
+  padding: 10px;
+  background: #444;
+  color: #fff;
+  text-align: center;
+}
+
+.contenedor-mensajes {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #fff;
+}
+
+.mensaje {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  max-width: 60%;
+}
+
+.mensaje.izquierda {
+  background: #e1ffc7;
+  align-self: flex-start;
+}
+
+.mensaje.derecha {
+  background: #c7dfff;
+  align-self: flex-end;
+}
+
+.panel-conversacion form {
+  display: flex;
+  padding: 10px;
+  background: #f0f0f0;
+  border-top: 1px solid #ddd;
+}
+
+.panel-conversacion form input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.panel-conversacion form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: #0070f3;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.panel-conversacion form button:hover {
+  background: #005bb5;
+}
+
+.formulario-contenedor {
+  padding: 20px;
+}
